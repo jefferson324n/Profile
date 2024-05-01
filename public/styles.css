@@ -1,0 +1,85 @@
+body, html {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    text-align: center;
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.logo-container {
+    position: relative;
+    width: 100px; /* Defina o tamanho da imagem do logo */
+    height: 100px; /* Defina o tamanho da imagem do logo */
+    margin: 0 auto 20px; /* Centralize a imagem do logo e adicione margem inferior */
+    border-radius: 50%; /* Faça a imagem do logo ficar redonda */
+    overflow: hidden; /* Esconda qualquer parte da imagem que estiver fora do contêiner */
+}
+
+.logo-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garanta que a imagem do logo cubra todo o contêiner */
+}
+
+
+#informacoes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor do fundo preto com transparência */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+#informacoes h1 {
+    font-size: 36px;
+}
+
+#informacoes p {
+    font-size: 18px;
+}
+
+#informacoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#informacoes ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#informacoes ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    #background {
+        background-size: contain;
+        background-position: center;
+    }
+}
